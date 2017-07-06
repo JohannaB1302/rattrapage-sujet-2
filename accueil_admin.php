@@ -41,17 +41,6 @@
                     } else {
                         echo 'ERREUR';
                     }
-                    // Envoi des infos de l'admin dans la BDD
-                    $req = $bdd->prepare('INSERT INTO admin(login, mdp) VALUES(:login, :hash)');
-                    $req->execute(array(
-                    'login' => $login,
-                    'hash' => $hash));
-                    // Verification de l'existence d'un login similaire dans la BDD
-                    $resultat = $req->fetch();
-                    if (!$resultat)
-                    {
-                        echo 'Ce login est déjà pris !';
-                    }
                     // Récupération des 10 derniers étudiants
                     $reponse = $bdd->query('SELECT id, Nom, Prenom, Note FROM étudiant ORDER BY id DESC LIMIT 0, 10');
 

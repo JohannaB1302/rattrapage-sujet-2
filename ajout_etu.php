@@ -3,9 +3,9 @@
   <!--<?php include("en_tete.php"); ?> -->
    <body>
    <h1>Ajouter des étudiants</h1>
-   	<?php
-   	function  ajouterJeu($newJeu){}; ?>
-   	<nav id="ajout">
+    <?php
+    function  ajouterJeu($newJeu){}; ?>
+    <nav id="ajout">
     <div class="formulaire_ajout">
         <h1>Ajout d'un étudiant</h1>
         <ul>
@@ -32,6 +32,6 @@
         </ul>
     </div>
 </nav>
-   	<!--<?php include("pied_de_page.php"); ?>-->
+    <!--<?php include("pied_de_page.php"); ?>-->
   </body>
 </html>

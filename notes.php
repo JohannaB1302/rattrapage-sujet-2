@@ -24,9 +24,12 @@
                         die('Erreur : ' . $e->getMessage());
                     }
                     // Ajout d'un étudiant
-                    $reqA = $bdd->prepare('INSERT INTO étudiants(id, Nom, Prenom, note) VALUES(:idA, :nomA, :prenomA, :noteA)');
+                    if ($idA != NULL AND $nomA != NULL AND $prenomA != NULL AND $noteA != NULL)
+                    {
+                    $reqA = $bdd->prepare('INSERT INTO étudiants(id, Nom, Prenom, Note) VALUES(:idA, :nomA, :prenomA, :noteA)');
                     $reqA->execute(array('idA' => $idA, 'nomA' => $nomA, 'prenomA' => $prenomA, 'noteA' => $noteA));
                     echo 'L\'étudiant a bien été ajouté !';
+                }
 
                     // Modif d'un étudiant
                     if (isset($_POST['idM']))

@@ -3,9 +3,9 @@
   <!--<?php include("en_tete.php"); ?> -->
    <body>
    <h1>Modifier les informations des étudiants</h1>
-   	<?php
-   	function  ajouterJeu($newJeu){}; ?>
-   	<nav id="modif">
+    <?php
+    function  ajouterJeu($newJeu){}; ?>
+    <nav id="modif">
     <div class="formulaire_modif">
         <h1>Modification des infos d'un étudiant</h1>
         <ul>
@@ -38,6 +38,6 @@
         </ul>
     </div>
 </nav>
-   	<!--<?php include("pied_de_page.php"); ?>-->
+    <!--<?php include("pied_de_page.php"); ?>-->
   </body>
 </html>
